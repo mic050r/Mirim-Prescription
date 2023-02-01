@@ -24,7 +24,6 @@ public class DepressionTestResult extends JFrame {
 	public DepressionTestResult() {
 
 		setTitle("우울증 자가진단 결과");
-		//commit 확인22
 		JPanel panel = new JPanel();
 		panel.setBounds(0, 0, 504, 814);
 		getContentPane().add(panel);
