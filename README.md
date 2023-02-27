@@ -24,6 +24,9 @@
 
 <img src="https://img.shields.io/badge/JAVA-007396?style=for-the-badge&logo=java&logoColor=white">
 ## 6. 스크린샷 
-|문진표 작성|신체검사&정서검사 선택|신체검사|신체검사 결과|
+|화면||||
+|:---:|:---:|:---:|:---:|
+| 문진표 작성 | 신체검사&정서검사 선택 | 신체검사 | 신체검사 결과 |
 |<img = src "https://media-private.canva.com/0QYxk/MAFTud0QYxk/1/s.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20230226%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230226T080552Z&X-Amz-Expires=96586&X-Amz-Signature=d6a8427ebe7f61089c6399f553a1e7486d458c560c0fde5891a5a50a8fa6b9f0&X-Amz-SignedHeaders=host&response-expires=Mon%2C%2027%20Feb%202023%2010%3A55%3A38%20GMT">|<img src = "https://media-private.canva.com/oNiXk/MAFTuZoNiXk/1/s.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20230226%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230226T143101Z&X-Amz-Expires=74896&X-Amz-Signature=9c36b2cd11c90a2901c1677d57ac30e30ae4bef2ada76212bb536d0a504fd705&X-Amz-SignedHeaders=host&response-expires=Mon%2C%2027%20Feb%202023%2011%3A19%3A17%20GMT">|<img src = "https://media-private.canva.com/NUmFA/MAFTuYNUmFA/1/s.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20230226%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230226T160800Z&X-Amz-Expires=70190&X-Amz-Signature=a984f14b032c00fbb7a9dbd16af118e95e5a9cbef792c42c612815b0dfa867dc&X-Amz-SignedHeaders=host&response-expires=Mon%2C%2027%20Feb%202023%2011%3A37%3A50%20GMT"|<img src = "https://media-private.canva.com/Z_bys/MAFTurZ_bys/1/s.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20230226%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230226T232410Z&X-Amz-Expires=42288&X-Amz-Signature=be2270b186f9322336d86f0fa9071ed7cd7a130e8bddca9d7e75ccec6c331dfb&X-Amz-SignedHeaders=host&response-expires=Mon%2C%2027%20Feb%202023%2011%3A08%3A58%20GMT">|
+
 
