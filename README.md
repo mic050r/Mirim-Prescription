@@ -20,7 +20,7 @@
 
 기획 & 개발 & 디자인
 
-## 5. 사용한 Skill/지식 , 주안점, 다른 프로젝트와의 차이점, 개선점 등
+## 5. 사용한 Skill/지식
 
 <img src="https://img.shields.io/badge/JAVA-007396?style=for-the-badge&logo=java&logoColor=white">
 
