@@ -1,6 +1,7 @@
-package mirim;
+package mirim.etest;
 
-import java.awt.BorderLayout;
+import mirim.data.InputData;
+
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -9,10 +10,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import java.awt.Font;
-import java.awt.Image;
 
 public class MemoryTestResult extends JFrame {
 	private JLabel mResult_MemoryTest;

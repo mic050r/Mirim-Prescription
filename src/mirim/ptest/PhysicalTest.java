@@ -1,7 +1,7 @@
-package mirim;
+package mirim.ptest;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
+import mirim.data.InputData;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 

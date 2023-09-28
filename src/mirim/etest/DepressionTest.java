@@ -1,6 +1,7 @@
-package mirim;
+package mirim.etest;
 
-import java.awt.BorderLayout;
+import mirim.data.InputData;
+
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -11,11 +12,9 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JRadioButton;
 
-//import mirim.StressTest.ItemListen;
+//import mirim.ET.StressTest.ItemListen;
 
 import javax.swing.JCheckBox;
 

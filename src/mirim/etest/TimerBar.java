@@ -1,18 +1,8 @@
-package mirim;
-
-import java.awt.BorderLayout;
+package mirim.etest;
 
 import java.awt.Color;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import java.awt.Font;
 
 class TimerBar extends JLabel implements Runnable {
 	int width = 200, height = 50;

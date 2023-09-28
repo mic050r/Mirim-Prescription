@@ -1,8 +1,9 @@
 package mirim;
 
+import mirim.data.InputData;
+
 import java.awt.Color;
 
-import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -14,11 +15,9 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import javax.swing.WindowConstants;
 
 public class Questionnaire extends JFrame {
 
-	private JTextField address;
 	private JTextField mText_cm;
 	private JTextField mText_kg;
 	private JTextField mText_blood;
@@ -134,53 +133,48 @@ public class Questionnaire extends JFrame {
 
 	private void getData() {
 		String name = mText_name.getText();
-		if (name.length() == 0) { //값이 입력되지 않으면
-			JOptionPane.showMessageDialog(null, "이름을 입력하지 않았습니다.", "문진표를 다시 확인해주세요.", JOptionPane.ERROR_MESSAGE);
-			// JOptionPane.showMessageDialog(Component parentComponent, 출력할 문자 메시지, 제목표시줄에
-			// 나타날 제목, 메시지 종류를 지정);
-			// int MessageType 을 이용해서 오류 메시지를 나타낸 창
-			return; // 리턴 해서 다시 문진표로 갈수 있게
-		}
-
 		String birth = mText_birth.getText();
-		if (birth.length() == 0) {
-			JOptionPane.showMessageDialog(null, "생일을 입력하지 않았습니다.", "문진표를 다시 확인해주세요.", JOptionPane.ERROR_MESSAGE);
-			return;
-		}
-
 		String blood = mText_blood.getText();
-		if (blood.length() == 0) {
-			JOptionPane.showMessageDialog(null, "혈액형을 입력하지 않았습니다.", "문진표를 다시 확인해주세요.", JOptionPane.ERROR_MESSAGE);
-			return;
-		}
-
 		String cm = mText_cm.getText();
-		if (cm.length() == 0) {
-			JOptionPane.showMessageDialog(null, "키를 입력하지 않았습니다.", "문진표를 다시 확인해주세요.", JOptionPane.ERROR_MESSAGE);
-			return;
-		}
-		if (Integer.parseInt(cm) < 0) { // string형을 정수형으로 바꿈
-			JOptionPane.showMessageDialog(null, "키를 다시 입력해주세요.", "문진표를 다시 확인해주세요.", JOptionPane.WARNING_MESSAGE);
-			return;
-		}
-
 		String kg = mText_kg.getText();
-		if (kg.length() == 0) {
-			JOptionPane.showMessageDialog(null, "몸무게를 입력하지 않았습니다.", "문진표를 다시 확인해주세요.", JOptionPane.ERROR_MESSAGE);
-			return;
-		}
-		if (Integer.parseInt(kg) < 0) { // string형을 정수형으로 바꿈
-			JOptionPane.showMessageDialog(null, "몸무게를 다시 입력해주세요.", "문진표를 다시 확인해주세요.", JOptionPane.WARNING_MESSAGE);
+
+		if (isEmpty(name, "이름을 입력하지 않았습니다.") || isEmpty(birth, "생일을 입력하지 않았습니다.")
+				|| isEmpty(blood, "혈액형을 입력하지 않았습니다.") || isEmpty(cm, "키를 입력하지 않았습니다.")
+				|| isNotPositiveInteger(cm, "키를 다시 입력해주세요.") || isEmpty(kg, "몸무게를 입력하지 않았습니다.")
+				|| isNotPositiveInteger(kg, "몸무게를 다시 입력해주세요.")) {
 			return;
 		}
 
-		InputData.name = name;   //InputData에 값 넣어놓기
-		InputData.birth = birth;  
+		InputData.name = name;
+		InputData.birth = birth;
 		InputData.blood = blood;
 		InputData.cm = cm;
 		InputData.kg = kg;
 
-		new TestType(); //테스트 화면으로 이동
-		dispose();// 현재 화면이 사라짐
+		new TestType();
+		dispose();
+	}
+
+	private boolean isEmpty(String value, String errorMessage) {
+		if (value.length() == 0) {
+			JOptionPane.showMessageDialog(null, errorMessage, "문진표를 다시 확인해주세요.", JOptionPane.ERROR_MESSAGE);
+			return true;
+		}
+		return false;
+	}
+
+	private boolean isNotPositiveInteger(String value, String errorMessage) {
+		try {
+			int intValue = Integer.parseInt(value);
+			if (intValue < 0) {
+				JOptionPane.showMessageDialog(null, errorMessage, "문진표를 다시 확인해주세요.", JOptionPane.WARNING_MESSAGE);
+				return true;
+			}
+		} catch (NumberFormatException e) {
+			// 숫자로 변환할 수 없는 경우도 처리
+			JOptionPane.showMessageDialog(null, errorMessage, "문진표를 다시 확인해주세요.", JOptionPane.WARNING_MESSAGE);
+			return true;
+		}
+		return false;
 	}
 }

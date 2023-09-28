@@ -1,8 +1,8 @@
-package mirim;
+package mirim.ptest;
 
-import java.awt.BorderLayout;
+import mirim.data.InputData;
+import mirim.TestType;
 
-import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -10,14 +10,9 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
 
 import java.awt.Font;
-import javax.swing.JTextField;
-import javax.swing.JScrollBar;
 
 public class PhysicalTestResult extends JFrame {
 	private JLabel mResult_BMI;
