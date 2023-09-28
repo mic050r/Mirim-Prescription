@@ -45,5 +45,6 @@
 |![image](https://github.com/mic050r/Mirim-Prescription/assets/103114387/56d68665-4915-468c-9aab-ded1c344ed83)|![image](https://github.com/mic050r/Mirim-Prescription/assets/103114387/33868d73-7b54-404e-936d-9a07ac03df23)|![image](https://github.com/mic050r/Mirim-Prescription/assets/103114387/9096980e-216a-44b0-a1ae-38d8c9e346f4)|
 
 |신체검사 페이지|신체검사 결과 페이지|
+|---|---|
 |![image](https://github.com/mic050r/Java_winter/assets/103114387/cfb1031a-afce-4930-8aff-1ddb56836068)|![image](https://github.com/mic050r/Java_winter/assets/103114387/880aa195-02da-4500-8f52-ccbc764282ad)|
 
