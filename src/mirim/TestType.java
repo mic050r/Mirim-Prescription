@@ -1,6 +1,9 @@
 package mirim;
 
-import java.awt.BorderLayout;
+import mirim.data.InputData;
+import mirim.etest.EtType;
+import mirim.ptest.PhysicalTest;
+
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

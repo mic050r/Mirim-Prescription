@@ -1,4 +1,4 @@
-package mirim;
+package mirim.etest;
 
 import java.util.Random;
 

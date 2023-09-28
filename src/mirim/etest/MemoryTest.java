@@ -1,7 +1,7 @@
-package mirim;
+package mirim.etest;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
+import mirim.data.InputData;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
@@ -12,10 +12,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import java.awt.Font;
-import java.awt.Image;
 import javax.swing.JTextField;
 
 public class MemoryTest extends JFrame {

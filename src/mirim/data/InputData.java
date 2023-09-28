@@ -1,4 +1,4 @@
-package mirim;
+package mirim.data;
 
 public class InputData {
 	// 문진표 작성
